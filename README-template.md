@@ -30,7 +30,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 https://www.frontendmentor.io/solutions/a-responsive-blog-preview-card-built-using-semantic-html-Sdq16Z0vFO
 
 - Live Site URL: 
-https://ablogpreviewcard.netlify.app/
+https://asociallinksprofile.netlify.app/
 
 
 
