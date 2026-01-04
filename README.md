@@ -1,0 +1,172 @@
+html {
+    font-size: 90%;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin-bottom: .6em;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--grey900);
+    color: var(--white);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+    margin-top: 0;
+}
+
+/* p, span { font-size: calc(1rem + 1vw); } */
+
+/*
+p,
+span {
+    font-size: clamp(.5rem, .4rem + 1.5vw, 1.3rem);
+}
+    */
+
+h1 {
+    font-size: clamp(1rem, .6rem + 2vw, 2rem);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: clamp(.3rem, .6rem + 1vw, 2rem);
+    color: var(--green);
+    font-weight: 400;
+}
+
+p, .link {
+    font-size: clamp(.2rem, .5rem + 1vw, 2rem);
+}
+
+.profile-section {
+    padding: 3em 0;
+    margin-bottom: 0;
+}
+
+main{margin-bottom: 0;}
+
+.profile-card {
+    background-color: var(--grey800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7em;
+    border-radius: 10px;
+    padding: 1.5em 1.7em;
+    
+}
+.avatar{
+    border-radius: 50%;
+    width: 30%;
+}
+
+.media-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.media-link {
+    list-style: none;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    background-color: var(--grey700);
+    color: var(--white);
+    display: block;
+    width: 100%;
+    padding: .5em 1em;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: .7em;
+}
+
+.link:hover, .link:focus{
+    background-color: var(--green);
+    color: var(--grey800);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 450px) {
+    .profile-card {
+        width: 60%;
+    }
+
+    html {
+        font-size: 80%
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .profile-card {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .profile-card {
+        width: 35%;
+        padding: 1.5em 2.5em;
+    }
+
+    html {
+        font-size: 60%
+    }
+
+    .profile-section{
+        padding-top: 6em;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .profile-card {
+        width: 25%;
+    }
+
+     html {
+        font-size: 40%
+    }
+
+    .profile-section{
+        padding-top: 9em;
+    }
+
+}
